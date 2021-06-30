@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-dark: #000;
+$primary-blue: #1071ff;
+$secondary: #000000, 54%;
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  background: #fff;
+  color: $primary-dark;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.divider {
+  height: 1px;
+  width: 124px;
+  border-radius: 0px;
+}
+
+input {
+  border: none;
+  &.inactive {
+    border-bottom: 1px solid #000;
+  }
+}
