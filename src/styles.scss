@@ -7,11 +7,22 @@
 
 $primary-dark: #000;
 $primary-blue: #1071ff;
-$secondary: #000000, 54%;
+$secondary: #00000050;
+$primary-blue__hover: #1071ff10;
+$primary-blue__focused: #1071ff25;
+$primary-blue__active: #1071ff40;
+
+.ph-40 {
+  padding: 0 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
+  font-size: .8em;
   line-height: 1.5;
   background: #fff;
   color: $primary-dark;
@@ -21,11 +32,15 @@ ul {
   list-style: none;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;
   overflow: hidden;
-  padding: 10px;
+  padding: 30px;
 }
 
 .divider {
@@ -39,4 +54,38 @@ input {
   &.inactive {
     border-bottom: 1px solid #000;
   }
+}
+
+.btn {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 15px 20px;
+  border-radius: 24px;
+  &.enabled {
+    color: $primary-blue;
+  }
+
+  &:hover {
+    background: $primary-blue__hover;
+  }
+
+  &:focus {
+    background: $primary-blue__focused;
+  }
+
+  &:active {
+    background: $primary-blue__active;
+  }
+
+  &:disabled {
+    color: $secondary;
+  }
+}
+
+.text-secondary {
+  color: $secondary;
 }

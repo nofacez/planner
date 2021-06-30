@@ -1,0 +1,25 @@
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  img {
+    margin-right: 12px;
+  }
+
+  .header-top-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.header-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 16px;
+
+  .header-title {
+    margin-left: 20px;
+  }
+}
